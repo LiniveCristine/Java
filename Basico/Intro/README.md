@@ -75,7 +75,7 @@ Relacionadas à ortografia da linguagem.
 ### Exemplos de erros léxicos
 
 ```java
-publik class Teste
+publik class Exercicio1
 ```
 
 ❌ `publik` foi digitado incorretamente.

@@ -231,7 +231,7 @@ RESULTADO = 10.5 metros
 
 ---
 
-# 🎯 Utilizando Placeholders
+# 🎯 Utilizando Exercicio1
 
 Os placeholders permitem inserir valores dentro de uma string formatada usando `printf()`.
 
@@ -253,7 +253,7 @@ Resultado = 10.50 metros
 
 ---
 
-# 📌 Principais Placeholders
+# 📌 Principais Exercicio1
 
 | Placeholder | Tipo                |
 | ----------- | ------------------- |
