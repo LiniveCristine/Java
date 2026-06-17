@@ -1,20 +1,21 @@
+import java.lang.classfile.instruction.SwitchCase;
 import java.util.Scanner;
 
 public class Teste {
     static void main(String[] args) {
+
+        int num = 1;
+        int total = 0;
         Scanner sc = new Scanner(System.in);
 
-        String line1;
-        int num;
+        while(num != 0){
+            System.out.print("Digite um numero: ");
+            num = sc.nextInt();
 
-        num = sc.nextInt();
-        sc.nextLine();
+            total += num;
+        }
 
-        System.out.print("Digite um texto: ");
-        line1 = sc.nextLine();
-
-        System.out.println("\nTexto digitado: ");
-        System.out.print(line1);
+        System.out.println(total);
     }
 }
 
