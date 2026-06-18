@@ -642,3 +642,272 @@ Loop infinito
 ```
 
 ---
+
+# 🔢 Estrutura `for`
+
+O `for` é utilizado quando a quantidade de repetições já é conhecida ou pode ser determinada antes da execução do laço.
+
+---
+
+## 📝 Sintaxe
+
+```java
+for (inicio; condicao; incremento) {
+
+    blocoDeCodigo;
+
+}
+```
+
+---
+
+## Componentes do `for`
+
+### 🚀 Início
+
+Executado apenas uma vez, no começo do laço.
+
+Geralmente utilizado para criar uma variável de controle.
+
+```java
+int i = 0;
+```
+
+---
+
+### ⚖️ Condição
+
+Verificada antes de cada repetição.
+
+Enquanto for verdadeira, o laço continua executando.
+
+```java
+i < 10
+```
+
+---
+
+### ➕
+
+Executado ao final de cada repetição.
+
+Normalmente utilizado para atualizar o contador.
+
+```java
+i++
+```
+
+---
+
+## Fluxo de Execução
+
+```text
+Início
+   ↓
+Condição
+   ↓
+true
+   ↓
+Executa bloco
+   ↓
+Incremento
+   ↓
+Volta para condição
+```
+
+---
+
+# 📌 Exemplo Básico
+
+```java
+int loops = 3;
+
+for (int i = 0; i < loops; i++) {
+
+    System.out.println("Executando...");
+
+}
+```
+
+### Saída
+
+```text
+Executando...
+Executando...
+Executando...
+```
+
+---
+
+# 🔢 Exemplo Contador
+
+```java
+for (int i = 1; i <= 5; i++) {
+
+    System.out.println(i);
+
+}
+```
+
+### Saída
+
+```text
+1
+2
+3
+4
+5
+```
+
+---
+
+# 🔄 Estrutura `do-while`
+
+O `do-while` é semelhante ao `while`, mas possui uma diferença importante:
+
+> O bloco de código é executado pelo menos uma vez.
+
+---
+
+## Por quê?
+
+Porque a condição é verificada somente no final.
+
+---
+
+## Sintaxe
+
+```java
+do {
+
+    blocoDeCodigo;
+
+} while (condicao);
+```
+
+---
+
+## Fluxo de Execução
+
+```text
+Executa bloco
+      ↓
+Verifica condição
+      ↓
+true
+      ↓
+Executa novamente
+```
+
+---
+
+# 📌 Exemplo Básico
+
+```java
+int x = 1;
+
+do {
+
+    System.out.println(x);
+
+    x++;
+
+} while (x <= 5);
+```
+
+### Saída
+
+```text
+1
+2
+3
+4
+5
+```
+
+---
+
+# ⚠️ Diferença Entre `while` e `do-while`
+
+## Exemplo com `while`
+
+```java
+int x = 10;
+
+while (x < 5) {
+
+    System.out.println("Executou");
+
+}
+```
+
+### Saída
+
+```text
+(nada acontece)
+```
+
+A condição já começa falsa.
+
+---
+
+## Exemplo com `do-while`
+
+```java
+int x = 10;
+
+do {
+
+    System.out.println("Executou");
+
+} while (x < 5);
+```
+
+### Saída
+
+```text
+Executou
+```
+
+Mesmo com a condição falsa, o bloco executa uma vez.
+
+---
+
+# 🎯 Quando Utilizar Cada Estrutura?
+
+## 🔄 While
+
+Quando não sabemos quantas repetições serão necessárias.
+
+### Exemplos
+
+* Menu de opções
+* Login até acertar a senha
+* Validação de entrada
+
+---
+
+## 🔢 For
+
+Quando sabemos a quantidade de repetições.
+
+### Exemplos
+
+* Contar de 1 a 100
+* Percorrer posições de um vetor
+* Executar uma tarefa 10 vezes
+
+---
+
+## 🔁 Do-While
+
+Quando o bloco precisa executar pelo menos uma vez.
+
+### Exemplos
+
+* Menus interativos
+* Perguntar ao usuário se deseja continuar
+* Sistemas que precisam exibir opções antes da validação
+
+---
+
